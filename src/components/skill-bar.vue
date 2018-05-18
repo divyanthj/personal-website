@@ -11,7 +11,7 @@ export default {
   name : 'skill-bar',
   props : {
     name: String,
-    value: Number
+    value: String
   }
 }
 </script>

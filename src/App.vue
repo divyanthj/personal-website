@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img id="photo" src="./assets/IMG_3187.jpg">
+    <img id="photo" src="../public/assets/IMG_3187.jpg">
     <Content msg="Divyanth Jayaraj"/>
+    <site-footer></site-footer>
   </div>
 </template>
 
 <script>
 import Content from './components/content.vue'
-
+import Footer from './components/site-footer.vue'
 export default {
   name: 'app',
   components: {
-    Content
+    Content,
+    'site-footer' : Footer
   }
 }
 </script>

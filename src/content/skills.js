@@ -18,5 +18,9 @@ export default [
   {
     name: 'VueJS',
     value: '8'
+  },
+  {
+    name: 'AngularJS',
+    value: '7.5'
   }
 ]
