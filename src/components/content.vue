@@ -4,6 +4,7 @@
     <p>
       Front End Developer
     </p>
+    <navbar @select='navigate($event)'></navbar>
     <ul class='skills'>
       <li v-for='skill in skills'>
         <skill :value='skill.value' :name='skill.name'></skill>
@@ -15,19 +16,27 @@
 
 <script>
 import SkillBar from './skill-bar'
+import NavBar from './navbar'
 import Skills from '../content/skills'
 export default {
   name: 'Content',
   data() {
     return {
-      skills : Skills
+      skills: Skills,
+      navSelect: "Projects"
     }
   },
   props: {
     msg: String
   },
+  methods : {
+    navigate(item) {
+      this.navSelect = item;
+    }
+  },
   components : {
-    'skill' : SkillBar
+    'skill' : SkillBar,
+    'navbar': NavBar
   }
 }
 </script>
