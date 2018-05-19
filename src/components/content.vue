@@ -5,6 +5,7 @@
       UI/UX Consultant
     </p>
     <navbar @select='navigate($event)'></navbar>
+    <intro v-show='this.navSelect == "Introduction"'></intro>
     <skills v-show='this.navSelect == "Skills"'></skills>
     <education v-show='this.navSelect == "Education"'></education>
     <projects v-show='this.navSelect == "Projects"'></projects>
@@ -13,6 +14,7 @@
 
 <script>
 import NavBar from './navbar'
+import Introduction from './introduction/introduction'
 import Skills from './skills/skills'
 import Education from './education/education'
 import Projects from './projects/projects'
@@ -32,6 +34,7 @@ export default {
     }
   },
   components : {
+    'intro': Introduction,
     'skills' : Skills,
     'education': Education,
     'projects': Projects,

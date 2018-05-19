@@ -3,7 +3,7 @@ export default [
     name: 'HTML5',
     value: '9.5',
     url:'https://www.w3schools.com/html/html5_intro.asp',
-    title: 'HTML5 is a markup language to build webpages'
+    title: 'Markup language to build layouts for webpages'
   },
   {
     name: 'Javascript',
