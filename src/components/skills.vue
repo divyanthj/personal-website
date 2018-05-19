@@ -2,7 +2,7 @@
   <div>
     <div class='skills'>
       <span v-for='skill in skills'>
-        <skill :value='skill.value' :name='skill.name'></skill>
+        <skill :value='skill.value' :name='skill.name' :url='skill.url'></skill>
       </span>
       <!-- <skill value="7.5" name="CSS3"></skill> -->
     </div>
