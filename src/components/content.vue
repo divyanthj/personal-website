@@ -13,9 +13,9 @@
 
 <script>
 import NavBar from './navbar'
-import Skills from './skills'
-import Education from './education'
-import Projects from './projects'
+import Skills from './skills/skills'
+import Education from './education/education'
+import Projects from './projects/projects'
 export default {
   name: 'Content',
   data() {

@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import Skills from '../content/skills'
+import Skills from '../../content/skills'
 import SkillBar from './skill-bar'
 export default {
   data() {
