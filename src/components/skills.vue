@@ -2,7 +2,7 @@
   <div>
     <div class='skills'>
       <span v-for='skill in skills'>
-        <skill :value='skill.value' :name='skill.name' :url='skill.url'></skill>
+        <skill :value='skill.value' :name='skill.name' :url='skill.url' :title='skill.title'></skill>
       </span>
       <!-- <skill value="7.5" name="CSS3"></skill> -->
     </div>
@@ -25,5 +25,9 @@ export default {
 <style>
 .skills {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 50%;
 }
 </style>

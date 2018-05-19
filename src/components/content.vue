@@ -20,7 +20,7 @@ export default {
   name: 'Content',
   data() {
     return {
-      navSelect: "Projects"
+      navSelect: "Skills"
     }
   },
   props: {
