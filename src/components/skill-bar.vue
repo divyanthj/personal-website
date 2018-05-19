@@ -17,6 +17,7 @@ export default {
 </script>
 <style>
   .skill {
+    display: inline-block;
     padding : 5px;
     box-shadow: 1px 1px 3px #aaaaaa;
   }

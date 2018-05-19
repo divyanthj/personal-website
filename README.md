@@ -15,7 +15,7 @@ cd semantic
 gulp build
 ```
 
-### Run in dev mode
+#### Run in dev mode
 ```
 npm run serve
 ```

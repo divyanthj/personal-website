@@ -1,28 +1,25 @@
 <template>
-  <div class="hello">
+  <div class="content">
     <h1>{{ msg }}</h1>
     <p>
-      Front End Developer
+      UI/UX Consultant
     </p>
     <navbar @select='navigate($event)'></navbar>
-    <ul class='skills'>
-      <li v-for='skill in skills'>
-        <skill :value='skill.value' :name='skill.name'></skill>
-      </li>
-      <!-- <skill value="7.5" name="CSS3"></skill> -->
-    </ul>
+    <skills v-show='this.navSelect == "Skills"'></skills>
+    <education v-show='this.navSelect == "Education"'></education>
+    <projects v-show='this.navSelect == "Projects"'></projects>
   </div>
 </template>
 
 <script>
-import SkillBar from './skill-bar'
 import NavBar from './navbar'
-import Skills from '../content/skills'
+import Skills from './skills'
+import Education from './education'
+import Projects from './projects'
 export default {
   name: 'Content',
   data() {
     return {
-      skills: Skills,
       navSelect: "Projects"
     }
   },
@@ -35,7 +32,9 @@ export default {
     }
   },
   components : {
-    'skill' : SkillBar,
+    'skills' : Skills,
+    'education': Education,
+    'projects': Projects,
     'navbar': NavBar
   }
 }
@@ -56,6 +55,10 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.content {
+  height : 37em;
 }
 
 </style>
