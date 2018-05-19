@@ -33,6 +33,9 @@ export default {
   .skill:hover {
     /* background-color: #eeeeee; */
     box-shadow: 1px 1px 12px #aaaaaa;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #555555;
   }
 
   a {
