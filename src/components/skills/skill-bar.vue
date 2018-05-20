@@ -26,13 +26,15 @@ export default {
   .skill {
     display: inline-block;
     padding : 5px;
-    box-shadow: 1px 1px 3px #aaaaaa;
+    box-shadow: 1px 1px 5px #aaaaaa;
     cursor: pointer;
+    border-radius: 3px;
+    margin:3px;
   }
 
   .skill:hover {
     /* background-color: #eeeeee; */
-    box-shadow: 1px 1px 12px #aaaaaa;
+    box-shadow: 0px 0px 12px #aaaaaa;
     text-decoration: underline;
     font-weight: bold;
     color: #555555;

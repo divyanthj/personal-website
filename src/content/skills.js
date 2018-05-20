@@ -70,5 +70,35 @@ export default [
     value: '5',
     url: 'https://www.scaledagileframework.com/',
     title: 'A kind of Agile Framework scaled for large corps'
+  },
+  {
+    name: 'Git',
+    value: '6',
+    url: 'https://git-scm.com/',
+    title: 'Version control software'
+  },
+  {
+    name: 'SVN',
+    value: '5',
+    url: 'https://subversion.apache.org/',
+    title: 'Version control software'
+  },
+  {
+    name: 'Semantic UI',
+    value: '7',
+    url: 'https://semantic-ui.com/',
+    title: 'CSS framework'
+  },
+  {
+    name: 'Bootstrap',
+    value: '5',
+    url: 'https://getbootstrap.com/',
+    title: 'CSS framework'
+  },
+  {
+    name: 'Kendo UI',
+    value: '6.5',
+    url: 'https://www.telerik.com/kendo-ui',
+    title: 'Widget library'
   }
 ]

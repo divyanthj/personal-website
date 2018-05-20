@@ -1,16 +1,17 @@
 <template>
-  <div class=''>
+  <div class='nav-bar'>
     <span :class='["nav-item", {"active" : (selected == "Introduction")}]' @click='select($event)' onselectstart="return false">Introduction</span>
     <span :class='["nav-item", {"active" : (selected == "Projects")}]' @click='select($event)' onselectstart="return false">Projects</span>
     <span :class='["nav-item", {"active" : (selected == "Skills")}]' @click='select($event)' onselectstart="return false">Skills</span>
     <span :class='["nav-item", {"active" : (selected == "Education")}]' @click='select($event)' onselectstart="return false">Education</span>
+    <span :class='["nav-item", {"active" : (selected == "FAQ")}]' @click='select($event)' onselectstart="return false">FAQ</span>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      selected: "Skills"
+      selected: "Introduction"
     }
   },
   methods : {
@@ -22,6 +23,10 @@ export default {
 }
 </script>
 <style>
+.nav-bar {
+  margin-bottom: 10px;
+}
+
 .nav-item {
   margin-left:30px;
   margin-right: 30px;

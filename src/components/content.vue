@@ -9,6 +9,7 @@
     <skills v-show='this.navSelect == "Skills"'></skills>
     <education v-show='this.navSelect == "Education"'></education>
     <projects v-show='this.navSelect == "Projects"'></projects>
+    <faq v-show='this.navSelect == "FAQ"'></faq>
   </div>
 </template>
 
@@ -18,11 +19,12 @@ import Introduction from './introduction/introduction'
 import Skills from './skills/skills'
 import Education from './education/education'
 import Projects from './projects/projects'
+import FAQ from './FAQ/faq'
 export default {
   name: 'Content',
   data() {
     return {
-      navSelect: "Skills"
+      navSelect: "Introduction"
     }
   },
   props: {
@@ -38,7 +40,8 @@ export default {
     'skills' : Skills,
     'education': Education,
     'projects': Projects,
-    'navbar': NavBar
+    'navbar': NavBar,
+    'faq': FAQ
   }
 }
 </script>
