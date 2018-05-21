@@ -19,4 +19,4 @@ gulp build
 ```
 npm run serve
 ```
-#### To see website, go to `[localhost:8080](https://localhost:8080)`
+#### To see website, go to [localhost:8080](https://localhost:8080)

@@ -5,11 +5,12 @@
       UI/UX Consultant
     </p>
     <navbar @select='navigate($event)'></navbar>
-    <intro v-show='this.navSelect == "Introduction"'></intro>
+    <router-view></router-view>
+    <!-- <intro v-show='this.navSelect == "Introduction"'></intro>
     <skills v-show='this.navSelect == "Skills"'></skills>
     <education v-show='this.navSelect == "Education"'></education>
     <projects v-show='this.navSelect == "Projects"'></projects>
-    <faq v-show='this.navSelect == "FAQ"'></faq>
+    <faq v-show='this.navSelect == "FAQ"'></faq> -->
   </div>
 </template>
 
@@ -33,6 +34,7 @@ export default {
   methods : {
     navigate(item) {
       this.navSelect = item;
+      this.$router.push(item);
     }
   },
   components : {
