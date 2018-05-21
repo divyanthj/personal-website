@@ -6,11 +6,14 @@
              :dates='project.dates'
              :image-url='project.imageUrl'
              @selected='selectProject($event)'></project>
-    <div class='description' v-if='selected'>
+    <div class='details' v-if='selected'>
       <div class='ui button' @click='unselect'>
         Back
       </div>
-      <div>
+      <div class='description'>
+        <p>
+          ({{dates}})
+        </p>
         <p v-for='paragraph in description'>
           {{paragraph}}
         </p>
@@ -26,16 +29,22 @@ export default {
     return {
       projects: Projects,
       selected: null,
-      description: null
+      description: null,
+      dates: null
     }
   },
   methods: {
     selectProject(project) {
       this.selected = project;
-      this.description = this.projects.filter((project) => {
+      let projectData = {};
+
+      projectData = this.projects.filter((project) => {
         return project.company == this.selected;
-      })[0].description;
-      console.log("Description", this.description);
+      })[0];
+
+      this.description = projectData.description;
+      this.dates = projectData.dates;
+
     },
     unselect() {
       this.selected = null;
@@ -59,5 +68,11 @@ export default {
   box-shadow: 1px 1px 5px #aaaaaa;
   border-radius: 10px;
   height: 85%;
+}
+
+.description {
+  overflow-y:auto;
+  height: 13em;
+  margin:12px;
 }
 </style>

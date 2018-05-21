@@ -32,6 +32,13 @@ export default {
   padding: 25px;
 }
 
+.project:hover {
+  box-shadow: 0px 0px 12px #aaaaaa;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #555555;
+}
+
 img {
   margin-left: auto;
   margin-right: auto;
