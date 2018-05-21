@@ -8,6 +8,7 @@
              @selected='selectProject($event)'></project>
     <div class='details' v-if='selected'>
       <div class='ui button' @click='unselect'>
+        <i class='angle double left icon'></i>
         Back
       </div>
       <div class='description'>
