@@ -1,6 +1,6 @@
 <template>
   <div class='intro'>
-    Hello, I am Divyanth Jayaraj. <br /><br />I have worked as a UI Developer consultant across the United States for more than 4 years. I've worked with many different UI frameworks and libraries.
+    Hello, I am Divyanth Jayaraj. <br /><br />I have worked as a UI Developer consultant for various clients across the United States for more than 4 years. I've used many different UI frameworks and libraries.
     Among them, VueJS is my favorite.
     <br /><br />Go ahead and navigate through the site to learn more about me.
   </div>
@@ -10,7 +10,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .intro {
   font-size: 20px;
   padding: 3em;
