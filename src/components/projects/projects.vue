@@ -1,5 +1,5 @@
 <template>
-  <div class='projects'>
+  <div class='section'>
     <project v-for='project in projects'
              v-if='!selected'
              :company='project.company'
@@ -59,18 +59,7 @@ export default {
 }
 </script>
 <style>
-.projects {
 
-  padding: 3em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: white;
-  box-shadow: 1px 1px 5px #aaaaaa;
-  border-radius: 10px;
-  height: 85%;
-}
 
  .back {
   box-shadow: 1px 1px 5px #aaaaaa;

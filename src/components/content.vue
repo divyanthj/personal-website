@@ -69,4 +69,17 @@ a {
   height : 37em;
 }
 
+.section {
+  padding: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 5px #aaaaaa;
+  border-radius: 10px;
+  height: 85%;
+  overflow: auto;
+}
+
 </style>

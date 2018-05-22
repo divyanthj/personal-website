@@ -33,4 +33,10 @@ export default {
   border-radius: 50%;
   box-shadow: 1px 1px 5px #aaaaaa;
 }
+
+@media screen and (width: 480px) {
+  .section {
+    width : 75%;
+  }
+}
 </style>

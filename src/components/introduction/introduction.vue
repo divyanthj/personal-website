@@ -1,5 +1,5 @@
 <template>
-  <div class='intro'>
+  <div class='section intro'>
     <p>
       Hello, I am Divyanth Jayaraj.
     </p>
@@ -19,14 +19,5 @@ export default {
 <style scoped>
 .intro {
   font-size: 20px;
-  padding: 3em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: white;
-  box-shadow: 1px 1px 5px #aaaaaa;
-  border-radius: 10px;
-  height: 85%;
 }
 </style>

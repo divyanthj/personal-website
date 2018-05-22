@@ -1,5 +1,5 @@
 courseeducationDetails.courses<template>
-  <div class='education'>
+  <div class='section'>
     <div class='summary' v-show='!selected'>
       <education v-for='college in education'
                 @select='selectEducation'
@@ -70,18 +70,6 @@ export default {
 }
 </script>
 <style>
-.education {
-  padding: 3em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  background-color: white;
-  box-shadow: 1px 1px 5px #aaaaaa;
-  border-radius: 10px;
-  height: 85%;
-}
-
 .courses {
   width: 5em;
 }

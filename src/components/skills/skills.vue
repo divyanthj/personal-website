@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class='section'>
 
-    <div class='skills'>
+    <div>
       <div class='filter'>
         <div class='ui input'>
           <input placeholder="Filter skills" v-model='filter'/>
@@ -45,20 +45,7 @@ export default {
 }
 </script>
 <style>
-.skills {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3em;
-  width: 50%;
-  background-color: white;
-  box-shadow: 1px 1px 5px #aaaaaa;
-  height: 85%;
-  border-radius: 10px;
-}
-
 .skill-list {
-  overflow-y:auto;
   height: 20em;
   margin:12px;
 }
