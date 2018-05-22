@@ -66,10 +66,24 @@ export default {
 }
 
 .description {
-  overflow-y:auto;
-  height: 22em;
+  /* overflow-y:auto;
+  height: 22em; */
   margin:12px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+@media screen and (max-width: 547px) {
+  .description {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .description {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 </style>
