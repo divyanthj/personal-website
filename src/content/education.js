@@ -4,7 +4,7 @@ export default [
     major: 'Computer Science',
     university: 'University of North Carolina at Charlotte',
     graduated: '2013',
-    imageUrl: 'https://transforming-science.com/wp-content/uploads/2016/11/unc-charlotte-logo.jpg',
+    imageUrl: './assets/education/uncc.jpg',
     courses: [
       'Algorithms and Data Structures',
       'Introduction to Game Design and Development',

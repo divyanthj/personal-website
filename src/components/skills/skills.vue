@@ -46,7 +46,6 @@ export default {
 </script>
 <style>
 .skill-list {
-  height: 20em;
   margin:12px;
 }
 
