@@ -4,10 +4,11 @@
              v-if='!selected'
              :company='project.company'
              :dates='project.dates'
+             :title='project.dates'
              :image-url='project.imageUrl'
              @selected='selectProject($event)'></project>
     <div class='details' v-if='selected'>
-      <div class='ui button' @click='unselect'>
+      <div class='ui button back' @click='unselect'>
         <i class='angle double left icon'></i>
         Back
       </div>
@@ -69,6 +70,10 @@ export default {
   box-shadow: 1px 1px 5px #aaaaaa;
   border-radius: 10px;
   height: 85%;
+}
+
+ .back {
+  box-shadow: 1px 1px 5px #aaaaaa;
 }
 
 .description {

@@ -25,7 +25,7 @@ export default [
     imageUrl: './assets/clients/footlocker.png',
     description: [
       "Foot Locker inc is a footwear/sportswear retailer based off New York City. I worked off the corporate office in Harrisburg, PA. Here, I was involved in building the front end for an internal application called Common Product",
-      "Common Product application provides an easy and consistent way for store managers to create new products to sell at their show rooms. The goal was to provide a way for Foot Locker to internall identify and curate products as opposed to using disparate identifiers provided by the brands themselves.",
+      "Common Product application provides an easy and consistent way for store managers to create new products to sell at their show rooms. The goal was to provide a way for Foot Locker to internally identify and curate products as opposed to using disparate identifiers provided by the brands themselves.",
       "The Common Product tech stack included AngularJS, NodeJS, Express, Cassandra, Jasmine, Karma etc"
     ]
   },

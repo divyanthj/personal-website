@@ -4,7 +4,7 @@
       Hello, I am Divyanth Jayaraj.
     </p>
     <p>
-      I have worked as a UI developer consultant for various clients across the United States. I have more than four years of experience, picking up various frameworks and libraries along the way.
+      I have worked as a UI developer consultant for various clients across the United States. I have more than four years of experience building highly interactive web applications and user interfaces.
     </p>
     <p>
       Go ahead and navigate through the website to learn more about me.

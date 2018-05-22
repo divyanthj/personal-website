@@ -8,9 +8,12 @@
         </div>
       </div>
 
-      <span v-for='skill in filteredSkills'>
-        <skill :value='skill.value' :name='skill.name' :url='skill.url' :title='skill.title'></skill>
-      </span>
+      <div class='skill-list'>
+        <span v-for='skill in filteredSkills'>
+          <skill :value='skill.value' :name='skill.name' :url='skill.url' :title='skill.title'></skill>
+        </span>
+      </div>
+
       <!-- <skill value="7.5" name="CSS3"></skill> -->
     </div>
   </div>
@@ -52,6 +55,12 @@ export default {
   box-shadow: 1px 1px 5px #aaaaaa;
   height: 85%;
   border-radius: 10px;
+}
+
+.skill-list {
+  overflow-y:auto;
+  height: 20em;
+  margin:12px;
 }
 
 .filter {
