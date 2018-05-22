@@ -60,7 +60,7 @@ export default {
 </script>
 <style>
 .projects {
-  font-size: 20px;
+
   padding: 3em;
   display: block;
   margin-left: auto;
@@ -78,7 +78,9 @@ export default {
 
 .description {
   overflow-y:auto;
-  height: 13em;
+  height: 22em;
   margin:12px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 </style>

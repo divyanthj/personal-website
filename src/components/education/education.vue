@@ -71,7 +71,6 @@ export default {
 </script>
 <style>
 .education {
-  font-size: 20px;
   padding: 3em;
   display: block;
   margin-left: auto;

@@ -31,15 +31,14 @@ export default {
 </script>
 <style scoped>
 .education-item {
-  text-align:left;
-  display: block;
+  display: inline-block;
   padding : 5px;
   box-shadow: 1px 1px 5px #aaaaaa;
   cursor: pointer;
   border-radius: 3px;
   margin:3px;
-  width: 100%;
-  height: 150px;
+  width: 50%;
+  height: 130px;
   padding: 25px;
 }
 
