@@ -10,6 +10,11 @@ export default [
     tooltip: 'Quora'
   },
   {
+    icon: './assets/Gmail-01.png',
+    url: 'mailto:divyanthj@gmail.com',
+    tooltip: 'Email me!'
+  },
+  {
     icon: './assets/Steemit-01.png',
     url: 'https://steemit.com/@divyanthj',
     tooltip: 'Steemit'
