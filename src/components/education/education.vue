@@ -1,6 +1,6 @@
-<template>
+courseeducationDetails.courses<template>
   <div class='education'>
-    <div class='list' v-show='!selected'>
+    <div class='summary' v-show='!selected'>
       <education v-for='college in education'
                 @select='selectEducation'
                 :degree='college.degree'
@@ -8,15 +8,18 @@
                 :university='college.university'
                 :imageUrl='college.imageUrl'></education>
     </div>
-    <div class='list' v-show='selected'>
+    <div class='details' v-show='selected'>
       <div class='ui button' @click='unselectEducation'>
+        <i class='angle double left icon'></i>
         Back
       </div>
-      <p>
-        Relevant Courses
-      </p>
-      <div class='ui list'>
-        <div class='item' v-for='course in courses'>
+      <div class='filter'>
+        <div class='ui input'>
+          <input placeholder="Filter courses" v-model='filter'/>
+        </div>
+      </div>
+      <div class='list'>
+        <div class='item' v-for='course in filteredCourses'>
           {{course}}
         </div>
       </div>
@@ -31,19 +34,31 @@ export default {
     return {
       education: Education,
       selected: null,
-      courses: []
+      educationDetails : null,
+      filter: ''
+    }
+  },
+  computed: {
+    filteredCourses() {
+      let result = [];
+      if(this.educationDetails) {
+        this.educationDetails.courses.forEach((course) => {
+          if(course.toLowerCase().indexOf(this.filter.toLowerCase()) > -1) {
+            result.push(course);
+          };
+        });
+        return this.filter.length > 0 ? result : this.educationDetails.courses;
+      }
+      return null;
+
     }
   },
   methods: {
     selectEducation(degree) {
       this.selected = degree;
-      let educationDetails = {};
-
-      educationDetails = this.education.filter((item) => {
+      this.educationDetails = this.education.filter((item) => {
         return item.degree == this.selected;
       })[0];
-
-      this.courses = educationDetails.courses;
     },
     unselectEducation() {
       this.selected = null;
