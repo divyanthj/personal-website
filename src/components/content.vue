@@ -82,4 +82,11 @@ a {
   overflow: auto;
 }
 
+
+@media screen and (max-width: 1024px) {
+  .section {
+    width : 85%;
+  }
+}
+
 </style>

@@ -66,10 +66,10 @@ export default [
     title: 'A software development methodology'
   },
   {
-    name: 'Scaled Agile Framework (SAFe)',
+    name: 'SAFe',
     value: '5',
     url: 'https://www.scaledagileframework.com/',
-    title: 'A kind of Agile Framework scaled for large corps'
+    title: 'Scaled Agile Framework, A kind of Agile Framework scaled for large corps'
   },
   {
     name: 'Git',
