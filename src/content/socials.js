@@ -10,7 +10,7 @@ export default [
     tooltip: 'Quora'
   },
   {
-    icon: './assets/steemit-01.png',
+    icon: './assets/Steemit-01.png',
     url: 'https://steemit.com/@divyanthj',
     tooltip: 'Steemit'
   },
