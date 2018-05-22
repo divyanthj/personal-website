@@ -58,4 +58,10 @@ export default {
 .filter > input {
   outline:none;
 }
+
+@media screen and (max-width: 475px) {
+  .filter > div > input {
+    width: 140px;
+  }
+}
 </style>

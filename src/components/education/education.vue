@@ -73,4 +73,10 @@ export default {
 .courses {
   width: 5em;
 }
+
+@media screen and (max-width: 475px) {
+  .filter > div > input {
+    width: 140px;
+  }
+}
 </style>

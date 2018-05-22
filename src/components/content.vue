@@ -89,4 +89,10 @@ a {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .section {
+    width: 75%;
+  }
+}
+
 </style>

@@ -56,4 +56,29 @@ export default {
   margin-right: 3em;
 }
 
+@media screen and (max-width: 1024px) {
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .degree {
+    font-size: 20px;
+  }
+
+  .university {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  .education-item {
+    width: 85%;
+  }
+
+}
+
 </style>
