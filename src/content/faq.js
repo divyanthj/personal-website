@@ -6,7 +6,7 @@ export default [
     ]
   },
   {
-    q: "What motivates you as a programmer?",
+    q: "What motivates you as a developer?",
     a: [
       "I like to build things. I really enjoy how the effort I put in the form of code, materializes in front of me as an end-product. My work, holding value with the stakeholders is an added bonus.",
       "At the end of the day, I could point at my work and say 'I made it'. The feeling that follows is the best!"
