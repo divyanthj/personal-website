@@ -8,6 +8,17 @@
         </div>
       </div>
 
+      <div class='sorters'>
+        <div class='ui label sorter' @click='sort("name")'>
+          Sort by Name
+          <i :class='{"down caret icon" : isAscending, "up caret icon" : !isAscending, "sort-pointer" : true}' v-if='sortCriteria == "name"'></i>
+        </div>
+        <div class='ui label sorter' @click='sort("value")'  unselectable="on">
+          Sort by Skill
+          <i :class='{"down caret icon" : isAscending, "up caret icon" : !isAscending, "sort-pointer" : true}' v-if='sortCriteria == "value"'></i>
+        </div>
+      </div>
+
       <div class='skill-list'>
         <span v-for='skill in filteredSkills'>
           <skill :value='skill.value' :name='skill.name' :url='skill.url' :title='skill.title'></skill>
@@ -25,7 +36,27 @@ export default {
   data() {
     return {
       skills: Skills,
-      filter: ''
+      filter: '',
+      isAscending: true,
+      sortCriteria: ''
+    }
+  },
+  methods : {
+    sort(criteria) {
+      this.sortCriteria = criteria;
+      this.filteredSkills.sort((a,b) => {
+        if(a[criteria] < b[criteria]) {
+          return (this.isAscending) ? -1 : 1;
+        }
+
+        if(a[criteria] > b[criteria]) {
+          return (this.isAscending) ? 1 : -1;
+        }
+
+        return 0;
+
+      });
+      this.isAscending = !this.isAscending;
     }
   },
   computed: {
@@ -56,6 +87,27 @@ export default {
 
 .filter > input {
   outline:none;
+}
+
+.sorters {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none;
+}
+
+.sorter {
+  text-align: left;
+  cursor: pointer;
+  width: 120px;
+  margin-right: 2px;
+  margin-top: 5px !important;
+  box-shadow: 1px 1px 3px #aaaaaa;
+}
+
+.sort-pointer {
+  margin-left: 10px !important;
+  margin-right: 0px !important;
 }
 
 @media screen and (max-width: 475px) {

@@ -36,6 +36,12 @@ export default [
     title: 'Automatic task-runner based on NodeJS'
   },
   {
+    name: 'Gulp',
+    value: '5.5',
+    url: 'https://gulpjs.com/',
+    title: 'Automatic task-runner based on NodeJS'
+  },
+  {
     name: 'VueJS',
     value: '8',
     url:'https://vuejs.org/',
@@ -45,7 +51,19 @@ export default [
     name: 'AngularJS',
     value: '7.5',
     url:'https://angularjs.org/',
-    title: 'Front End Framework currently popular among big corps'
+    title: 'Front End Framework by Google currently popular among big corps'
+  },
+  {
+    name: 'ReactJS',
+    value: '5',
+    url: 'https://reactjs.org/',
+    title: 'Front End Framework developed by Facebook'
+  },
+  {
+    name: 'jQuery UI',
+    value: '6.5',
+    url: 'https://jqueryui.com/',
+    title: 'jQuery based plugin library'
   },
   {
     name: 'Jasmine/Karma',

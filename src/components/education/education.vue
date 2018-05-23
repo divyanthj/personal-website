@@ -18,6 +18,12 @@ courseeducationDetails.courses<template>
           <input placeholder="Filter courses" v-model='filter'/>
         </div>
       </div>
+      <div class='sorters'>
+        <div class='ui label' @click='sort()'>
+          Sort Coursework
+          <i :class='{"down caret icon" : isAscending, "up caret icon" : !isAscending, "sort-pointer": true}'></i>
+        </div>
+      </div>
       <div class='list'>
         <div class='item' v-for='course in filteredCourses'>
           {{course}}
@@ -35,7 +41,8 @@ export default {
       education: Education,
       selected: null,
       educationDetails : null,
-      filter: ''
+      filter: '',
+      isAscending: true
     }
   },
   computed: {
@@ -62,6 +69,19 @@ export default {
     },
     unselectEducation() {
       this.selected = null;
+    },
+    sort() {
+      this.filteredCourses.sort((a,b) => {
+        if(a < b) {
+          return (this.isAscending) ? -1 : 1;
+        }
+
+        if(a > b) {
+          return (this.isAscending) ? 1 : -1;
+        }
+        return 0;
+      });
+      this.isAscending = !this.isAscending;
     }
   },
   components: {
@@ -72,6 +92,14 @@ export default {
 <style>
 .courses {
   width: 5em;
+}
+
+.sorters > .ui.label {
+  text-align: left;
+  cursor: pointer;
+  margin-right: 2px;
+  margin-top: 5px !important;
+  box-shadow: 1px 1px 3px #aaaaaa;
 }
 
 @media screen and (max-width: 475px) {
