@@ -6,11 +6,6 @@
     </p>
     <navbar @select='navigate($event)'></navbar>
     <router-view></router-view>
-    <!-- <intro v-show='this.navSelect == "Introduction"'></intro>
-    <skills v-show='this.navSelect == "Skills"'></skills>
-    <education v-show='this.navSelect == "Education"'></education>
-    <projects v-show='this.navSelect == "Projects"'></projects>
-    <faq v-show='this.navSelect == "FAQ"'></faq> -->
   </div>
 </template>
 
