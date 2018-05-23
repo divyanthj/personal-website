@@ -1,7 +1,7 @@
 <template>
   <div class='section'>
 
-    <div>
+    <div class='skill-content'>
       <div class='filter'>
         <div class='ui input'>
           <input placeholder="Filter skills" v-model='filter'/>
@@ -77,11 +77,14 @@ export default {
 <style>
 .skill-list {
   margin:12px;
+  height: 14em;
+  overflow: auto;
 }
 
 .filter {
   display: block;
   margin: 20px;
+  margin-top:0px;
 }
 
 .filter > input {
@@ -108,6 +111,10 @@ export default {
   margin-left: 10px !important;
   margin-right: 0px !important;
   float: right;
+}
+
+.skill-content {
+  height: 90%;
 }
 
 @media screen and (max-width: 475px) {

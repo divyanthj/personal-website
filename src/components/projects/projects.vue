@@ -66,8 +66,8 @@ export default {
 }
 
 .description {
-  /* overflow-y:auto;
-  height: 22em; */
+  overflow-y:auto;
+  height: 20em;
   margin:12px;
   padding-left: 60px;
   padding-right: 60px;

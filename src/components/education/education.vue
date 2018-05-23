@@ -94,11 +94,17 @@ export default {
   width: 5em;
 }
 
+.list {
+  height: 12em;
+  overflow: auto;
+}
+
 .sorters > .ui.label {
   text-align: left;
   cursor: pointer;
   margin-right: 2px;
   margin-top: 5px !important;
+  margin-bottom: 12px !important;
   box-shadow: 1px 1px 3px #aaaaaa;
 }
 
