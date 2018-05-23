@@ -8,9 +8,10 @@
     </p>
     <p>
       This website was built from scratch. It serves as a testament to my skill as a software developer.
+      You can find its source code <a href='https://github.com/divyanthj/personal-website' target='_blank'>here</a>.
     </p>
     <p>
-      Go ahead and navigate through the website to learn more about me. You can find its source code <a href='https://github.com/divyanthj/personal-website' target='_blank'>here</a>
+      Go ahead and navigate through the website to learn more about me.
     </p>
   </div>
 </template>
