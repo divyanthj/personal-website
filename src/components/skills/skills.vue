@@ -45,16 +45,15 @@ export default {
     sort(criteria) {
       this.sortCriteria = criteria;
       this.filteredSkills.sort((a,b) => {
-        if(a[criteria] < b[criteria]) {
+        if(a[criteria].toLowerCase() < b[criteria].toLowerCase()) {
           return (this.isAscending) ? -1 : 1;
         }
 
-        if(a[criteria] > b[criteria]) {
+        if(a[criteria].toLowerCase() > b[criteria].toLowerCase()) {
           return (this.isAscending) ? 1 : -1;
         }
 
         return 0;
-
       });
       this.isAscending = !this.isAscending;
     }
@@ -108,6 +107,7 @@ export default {
 .sort-pointer {
   margin-left: 10px !important;
   margin-right: 0px !important;
+  float: right;
 }
 
 @media screen and (max-width: 475px) {
