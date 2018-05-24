@@ -1,12 +1,15 @@
 <template>
   <div class='section'>
-    <project v-for='project in projects'
-             v-if='!selected'
-             :company='project.company'
-             :dates='project.dates'
-             :title='project.dates'
-             :image-url='project.imageUrl'
-             @selected='selectProject($event)'></project>
+    <div class='project-list' v-if='!selected'>
+      <project v-for='project in projects'
+               v-if='!selected'
+               :company='project.company'
+               :dates='project.dates'
+               :title='project.dates'
+               :image-url='project.imageUrl'
+               @selected='selectProject($event)'></project>
+    </div>
+
     <div class='details' v-if='selected'>
       <div class='ui button back' @click='unselect'>
         <i class='angle double left icon'></i>
@@ -62,13 +65,19 @@ export default {
 
 
 
-.description {
+.description, .project-list {
   overflow-y:auto;
   height: 20em;
   margin:12px;
   padding-left: 60px;
   padding-right: 60px;
 }
+
+.project-list {
+  height: 24em;
+}
+
+
 
 @media screen and (max-width: 547px) {
   .description {
