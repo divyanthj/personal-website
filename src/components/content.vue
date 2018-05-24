@@ -74,7 +74,12 @@ a {
   box-shadow: 1px 1px 5px #aaaaaa;
   border-radius: 10px;
   height: 85%;
-  overflow: auto;
+}
+
+
+.back {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  margin-bottom: 20px !important;
 }
 
 

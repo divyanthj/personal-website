@@ -9,7 +9,7 @@ courseeducationDetails.courses<template>
                 :imageUrl='college.imageUrl'></education>
     </div>
     <div class='details' v-show='selected'>
-      <div class='ui button' @click='unselectEducation'>
+      <div class='ui button back' @click='unselectEducation'>
         <i class='angle double left icon'></i>
         Back
       </div>
@@ -106,6 +106,11 @@ export default {
   margin-top: 5px !important;
   margin-bottom: 12px !important;
   box-shadow: 1px 1px 3px #aaaaaa;
+}
+
+.back {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  margin-bottom: 20px !important;
 }
 
 @media screen and (max-width: 475px) {

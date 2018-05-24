@@ -61,9 +61,6 @@ export default {
 <style>
 
 
- .back {
-  box-shadow: 1px 1px 5px #aaaaaa;
-}
 
 .description {
   overflow-y:auto;
