@@ -1,14 +1,16 @@
 <template>
   <div class='section'>
-    <div class='ui accordion'>
-      <div v-for='question in questions'>
-        <div class='title'>
-          {{question.q}}
-        </div>
-        <div class='content'>
-          <p v-for='paragraph in question.a'>
-            {{paragraph}}
-          </p>
+    <div class='faq'>
+      <div class='ui accordion'>
+        <div v-for='question in questions'>
+          <div class='title'>
+            {{question.q}}
+          </div>
+          <div class='content'>
+            <p v-for='paragraph in question.a'>
+              {{paragraph}}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -30,5 +32,8 @@ export default {
 }
 </script>
 <style>
-
+.faq {
+  overflow: auto;
+  height: 26em;
+}
 </style>
