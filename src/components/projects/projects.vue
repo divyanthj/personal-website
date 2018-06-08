@@ -80,7 +80,7 @@ export default {
 
 
 @media screen and (max-width: 547px) {
-  .description {
+  .description, .project-list {
     padding-left: 2px;
     padding-right: 2px;
   }
