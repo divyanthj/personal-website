@@ -25,5 +25,12 @@ export default [
       "I like playing video games, especially strategy games where you get to build an empire. I like the idea of starting small and then scaling it up. So, I emulate it wherever I can.",
       "Besides video games, I am passionate about Blockchain and Cryptocurrencies. In fact, expertise in blockchain technologies is one of the most significant items on my bucket list."
     ]
+  },
+  {
+    q: "How do I contact you?",
+    a: [
+      "Check out my social media handles at the bottom of this page. One of those handles is my gmail address. Clicking on it will automatically take you to your mailing app.",
+      "For reference, my email address is divyanthj@gmail.com"
+    ]
   }
 ]
