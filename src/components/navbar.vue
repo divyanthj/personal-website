@@ -1,17 +1,16 @@
 <template>
   <div class='nav-bar'>
-    <span v-for='section in sections'
-          :class='["nav-item", {"active" : (selected == section)}]'
-          @click='select($event)'
-          onselectstart="return false">{{section}}</span>
+      <span :class='["nav-item", {"active" : (selected == "Introduction")}]' @click='select($event)' onselectstart="return false">Introduction</span>
+      <span :class='["nav-item", {"active" : (selected == "Projects")}]' @click='select($event)' onselectstart="return false">Projects</span>
+      <span :class='["nav-item", {"active" : (selected == "Skills")}]' @click='select($event)' onselectstart="return false">Skills</span>
+      <span :class='["nav-item", {"active" : (selected == "Education")}]' @click='select($event)' onselectstart="return false">Education</span>
+      <span :class='["nav-item", {"active" : (selected == "FAQ")}]' @click='select($event)' onselectstart="return false">FAQ</span>
   </div>
 </template>
 <script>
-import Sections from '../content/sections'
 export default {
   data() {
     return {
-      sections: Sections,
       selected: "Introduction"
     }
   },
